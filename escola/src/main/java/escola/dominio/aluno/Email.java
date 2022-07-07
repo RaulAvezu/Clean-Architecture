@@ -1,4 +1,4 @@
-package escola;
+package escola.dominio.aluno;
 
 public class Email {
 	private String endereco;
