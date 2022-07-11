@@ -8,6 +8,7 @@ public class Aluno {
 	private String nome;
 	private Email email;
 	private List<Telefone> telefones = new ArrayList<>();
+	private String senha;
 
 	public void adicionarTelefone(String ddd, String numero) {
 		this.telefones.add(new Telefone(ddd, numero));
@@ -20,8 +21,8 @@ public class Aluno {
 		this.email = email;
 	}
 
-	public CPF getCpf() {
-		return cpf;
+	public String getCpf() {
+		return cpf.getNumero();
 	}
 
 	public void setCpf(CPF cpf) {
@@ -36,8 +37,8 @@ public class Aluno {
 		this.nome = nome;
 	}
 
-	public Email getEmail() {
-		return email;
+	public String getEmail() {
+		return email.getEndereco();
 	}
 
 	public void setEmail(Email email) {
